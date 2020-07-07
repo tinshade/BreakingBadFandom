@@ -4,7 +4,7 @@ import './App.css';
 import Header from './components/UI/header'
 import Search from './components/UI/Search'
 import Pagination from './components/UI/Pagination'
-import Header from './components/UI/header'
+import Footer from './components/UI/footer'
 import CMenu from './components/characters/characterMenu'
 
 function App() {
@@ -38,7 +38,7 @@ function App() {
       <Search getQuery={(q)=>{setQuery(q)}}/>
       <CMenu isLoading={isLoading} items={currentPosts}/>
       <Pagination postsPerPage={postsPerPage} totalPosts={items.length} paginate={paginate}/>
-      <Header/>
+      <Footer/>
     </div>
   );
 }
